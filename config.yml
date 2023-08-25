@@ -1,0 +1,53 @@
+baseURL: "https://typhucoin.com"
+languageCode: en-us
+title: Tỷ Phú Coin
+theme: PaperMod
+paginate: 6
+
+params:
+  env: production
+  homeInfoParams:
+    Title: "Xin chào"
+    Content: "Chào mừng các bạn đến với thế giới Crypto. Chắc hẳn chúng ta ở đến với Crypto vì một trong hai lý do chính, thứ nhất là công nghệ tài chính, thứ hai là
+    tài chính tiền bạc. Lĩnh vực Crypto dù đã có hơn 10 năm phát triển nhưng so với những ngày nghề khác thì thực sự cũng chỉ mới bắt đầu và vẫn còn rất nhiều
+    tiềm năng cũng như thách thức ở phía trước. Để thành công trong Crypto, ngoài yếu tố về may mắn thì không thể thiếu yếu tố về sự hiểu biết cũng như đam mê
+    kiên nhẫn và kỷ luật. Hy vọng các bạn gặp nhiều may mắn và thành công trong thế giới Crypto này."
+
+  socialIcons:
+    - name: twitter
+      url: "https://twitter.com/nhagiaodich_com"
+    - name: tiktok
+      url: "https://tiktok.com/@nhagiaodich_com"
+    - name: facebook
+      url: "https://www.facebook.com/nhagiaodichcom"
+    - name: youtube
+      url: "https://www.youtube.com/@nhagiaodich_com"
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON # is necessary
+
+menu:
+  main:
+    - identifier: categories
+      name: Phân loại
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: Lưu trữ
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: Tìm kiếm
+      url: /search/
+      weight: 40    
+    - identifier: about
+      name: Buy me a coffee
+      url: /buymeacoffee/
+      weight: 50
